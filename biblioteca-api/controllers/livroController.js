@@ -76,7 +76,7 @@ exports.deletarLivro = async (req, res) => {
       return res.status(404).json({ message: "Livro não encontrado" });
     }
 
-    await livro.remove();
+    await livro.deleteOne();
     res.json({ message: "Livro deletado com sucesso" });
   } catch (err) {
     res.status(500).json({ message: err.message });
