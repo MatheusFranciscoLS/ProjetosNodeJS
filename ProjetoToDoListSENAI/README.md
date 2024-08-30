@@ -2,12 +2,12 @@
 
 ## 1. O que Vamos Fazer
 
-Desenvolver uma aplicação To-Do List que permita aos colaboradores da Escola SENAI organizar e gerenciar suas tarefas de forma eficiente. A aplicação deve ser acessível, intuitiva e segura, com funcionalidades que atendam às necessidades dos usuários.
+Desenvolver uma aplicação web de To-Do List utilizando tecnologias modernas e práticas de mercado, garantindo segurança, escalabilidade e uma experiência de usuário fluida. Este projeto visa aplicar e aprimorar habilidades em React, Node.js, MongoDB e JWT, criando uma solução completa e funcional que pode ser implementada no mundo real.
 
 ## 2. Escopo Funcional
 
 - **Cadastro de Usuários:** Permitir que os colaboradores se cadastrem com seus dados pessoais e criem uma conta segura.
-- **Login e Autenticação:** Implementar um sistema de login seguro para garantir que apenas usuários autorizados acessem a aplicação.
+- **Login e Autenticação:** Implementar um sistema de login seguro utilizando JWT para garantir que apenas usuários autorizados acessem a aplicação.
 - **Gestão de Tarefas:** Permitir aos usuários criar, editar, visualizar e excluir tarefas.
 - **Categorias e Prioridades:** Organizar as tarefas em categorias e permitir que os usuários definam prioridades.
 - **Notificações:** Enviar lembretes para os usuários sobre as tarefas próximas de vencer.
@@ -18,7 +18,7 @@ Desenvolver uma aplicação To-Do List que permita aos colaboradores da Escola S
 ## 3. Escopo Não Funcional
 
 - **Desempenho:** A aplicação deve carregar rapidamente e ter um tempo de resposta adequado, mesmo com muitos usuários e tarefas cadastradas.
-- **Segurança:** Implementar criptografia de dados e proteção contra ataques comuns, como SQL Injection e Cross-Site Scripting (XSS).
+- **Segurança:** Implementar criptografia de dados e proteção contra ataques comuns, como SQL Injection e Cross-Site Scripting (XSS), utilizando práticas de segurança robustas com JWT.
 - **Usabilidade:** A interface deve ser acessível a todos os tipos de usuários, com uma curva de aprendizado mínima.
 - **Disponibilidade:** A aplicação deve estar disponível 99,9% do tempo, com downtime mínimo para manutenção.
 - **Compatibilidade:** A aplicação deve ser compatível com os principais navegadores e dispositivos móveis.
@@ -28,7 +28,7 @@ Desenvolver uma aplicação To-Do List que permita aos colaboradores da Escola S
 
 - **Específico:** Desenvolver uma aplicação To-Do List que permita aos colaboradores do SENAI gerenciar suas tarefas.
 - **Mensurável:** Atingir 100% das funcionalidades descritas no escopo funcional até a data de entrega.
-- **Alcançável:** Utilizar tecnologias adequadas e uma equipe qualificada para desenvolver a aplicação.
+- **Alcançável:** Utilizar tecnologias adequadas, como React, Node.js, MongoDB e JWT, e uma equipe qualificada para desenvolver a aplicação.
 - **Relevante:** A aplicação deve melhorar a organização e eficiência dos colaboradores do SENAI.
 - **Temporal:** Completar o desenvolvimento e entrega da aplicação em 6 meses.
 
@@ -53,7 +53,7 @@ Desenvolver uma aplicação To-Do List que permita aos colaboradores da Escola S
 - **Financeiros:** Orçamento para pagamento da equipe, aquisição de licenças e manutenção da aplicação.
 - **Tempo:** 6 meses para o desenvolvimento completo do projeto.
 
-## Diagramas
+## 8. Diagramas
 
 ### Diagrama de Classes
 
