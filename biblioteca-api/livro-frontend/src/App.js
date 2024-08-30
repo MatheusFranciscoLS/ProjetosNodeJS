@@ -1,11 +1,21 @@
 import React from "react";
-import Livro from "./components/Livro";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ListaLivros from "./components/ListaLivro";
+import NovoLivro from "./components/NovoLivro";
+import EditarLivro from "./components/EditarLivro";
+import "./css/style.css";
 
 function App() {
   return (
-    <div className="App">
-      <Livro />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<ListaLivros />} />
+          <Route path="/novo" element={<NovoLivro />} />
+          <Route path="/editar/:id" element={<EditarLivro />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

@@ -1,0 +1,141 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form,
+.lista-livros {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustes específicos para os botões na lista de livros */
+.lista-livros li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-livros .actions {
+    display: flex;
+    gap: 5px;
+    /* Define o espaço entre os botões */
+}
+
+.lista-livros a,
+.lista-livros button {
+    margin: 0;
+    /* Remove margens extras */
+    padding: 5px 10px;
+    /* Uniformiza o padding dos botões */
+    font-size: 14px;
+    /* Uniformiza o tamanho da fonte */
+    border-radius: 4px;
+    /* Bordas arredondadas */
+}
+
+/* Estilização para o botão "Editar" */
+.editar-btn {
+    background-color: #5bc0de;
+    /* Cor de fundo azul */
+    color: white;
+    /* Cor do texto branco */
+    padding: 5px 10px;
+    /* Padding interno */
+    border: none;
+    /* Remover borda */
+    border-radius: 4px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de mão ao passar o mouse */
+    font-size: 14px;
+    /* Tamanho da fonte */
+}
+
+.editar-btn:hover {
+    background-color: #31b0d5;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.lista-livros .editar-btn:hover {
+    background-color: #31b0d5;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização para o botão "Deletar" */
+.lista-livros button {
+    background-color: #d9534f;
+    /* Cor do botão deletar */
+    color: white;
+    /* Cor do texto branco */
+    border: none;
+    /* Remover borda */
+}
+
+.lista-livros button:hover {
+    background-color: #c9302c;
+    /* Cor ao passar o mouse no botão deletar */
+}
