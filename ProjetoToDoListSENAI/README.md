@@ -57,125 +57,12 @@ Desenvolver uma aplicação To-Do List que permita aos colaboradores da Escola S
 
 ### Diagrama de Classes
 
-```plaintext
-+--------------------+
-|      Usuário       |
-+--------------------+
-| -id                |
-| -nome              |
-| -email             |
-| -senha             |
-+-----------------------+
-| +registrar()          |
-| +fazerLogin()         |
-| +gerenciarTarefas()   |
-| +definirCategorias()  |
-| +definirPrioridades() |
-| +receberNotificacoes()|
-| +visualizarHistorico()|
-+-----------------------+
-
-+--------------------+
-|     Tarefa         |
-+--------------------+
-| -id                |
-| -descricao         |
-| -categoria         |
-| -prioridade        |
-| -dataVencimento    |
-| -status            |
-+--------------------+
-| +criar()           |
-| +editar()          |
-| +visualizar()      |
-| +excluir()         |
-+--------------------+
-
-+---------------------+
-|  Administrador      |
-+---------------------+
-| -id                 |
-| -nome               |  
-| -email              |
-| -senha              |
-+---------------------+
-| +gerenciarUsuarios()|
-+-----------------=---+
+![Diagrama de Classes](docs/diagrams/diagrama_classe.png)
 
 ### Diagrama de Casos de Uso
 
-+-----------------+     +-----------------------+
-|   Usuário Comum |     |     Administrador     |
-+-----------------+     +-----------------------+
-        |                       |
-        |                       |
-        V                       V
-+-------------------+   +-------------------------+
-|   Registrar-se    |   |  Gerenciar Usuários     |
-+-------------------+   +-------------------------+
-        |                       |
-        V                       |
-+-------------------+           |
-|   Fazer Login     |           |
-+-------------------+           |
-        |                       |
-        V                       |
-+-------------------+           |
-| Gerenciar Tarefas |           |
-+-------------------+           |
-        |                       |
-        V                       |
-+--------------------+          |
-|  Definir Categorias|          |
-+--------------------+          |
-        |                       |
-        V                       |
-+--------------------+          |
-| Definir Prioridades|          |
-+--------------------+          |
-        |                       |
-        V                       |
-+---------------------+         |
-| Receber Notificações|         |
-+---------------------+         |
-        |                       |
-        V                       |
-+---------------------+         |
-| Visualizar Histórico|         |
-|      de Tarefas     |         |
-+---------------------+    
+![Diagrama de Casos de Uso](docs/diagrams//diagrama_casos_de_uso.png)
 
 ### Diagrama de Fluxo
 
-                 Início
-                    |
-        +-----------+-----------+
-        |                       |
-    Escopo do Projeto       Análise de Risco
-        |                       |
-        |                       |
-        V                       |
-   Definir Requisitos        Mitigações
-        |                       |
-        |                       |
-        V                       |
-   Design da Interface        Recursos
-        |                       |
-        |                       |
-        V                       |
-   Desenvolvimento          Cronograma
-        |                       |
-        |                       |
-        V                       |
-   Testes e Correções           |
-        |                       |
-        |                       |
-        V                       |
-   Implantação e Treinamento    |
-        |                       |
-        |                       |
-        V                       |
-      Fim                       |
-                                |
-                                V
-      Recursos (Humanos, Tecnológicos, Financeiros, Tempo)
+![Diagrama de Fluxo](docs/diagrams//diagrama_fluxo.png)
