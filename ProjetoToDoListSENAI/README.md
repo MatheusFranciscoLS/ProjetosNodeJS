@@ -103,7 +103,7 @@ Desenvolver uma aplicação To-Do List que permita aos colaboradores da Escola S
 +-----------------=---+
 
 ### Diagrama de Casos de Uso
-
+```plaintext
 +-----------------+     +-----------------------+
 |   Usuário Comum |     |     Administrador     |
 +-----------------+     +-----------------------+
@@ -146,7 +146,7 @@ Desenvolver uma aplicação To-Do List que permita aos colaboradores da Escola S
 +---------------------+    
 
 ### Diagrama de Fluxo
-
+```plaintext
                  Início
                     |
         +-----------+-----------+
