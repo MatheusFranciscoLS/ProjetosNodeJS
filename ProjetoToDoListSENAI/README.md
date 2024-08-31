@@ -57,12 +57,12 @@ Desenvolver uma aplicação web de To-Do List utilizando tecnologias modernas e 
 
 ### Diagrama de Classes
 
-![Diagrama de Classes](docs/diagrams/diagrama_classe1.png)
+![Diagrama de Classes](docs/diagrams/diagrama_classe.png)
 
 ### Diagrama de Casos de Uso
 
 
-![Diagrama de Casos de Uso](docs/diagrams//diagrama_casos_de_uso1.png)
+![Diagrama de Casos de Uso](docs/diagrams//diagrama_casos_de_uso.png)
 
 ### Diagrama de Fluxo
 
