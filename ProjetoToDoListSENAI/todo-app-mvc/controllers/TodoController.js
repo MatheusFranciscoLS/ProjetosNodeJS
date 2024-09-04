@@ -4,7 +4,6 @@ import connectMongo from "@/utils/dbConnect";
 //Criar o CRUD
 
 // Read
-
 export const getTodos = async () => {
   connectMongo;
   try {
@@ -24,6 +23,7 @@ export const createTodo = async (data) => {
   }
 };
 
+//Update
 export const updateTodo = async (id, data) => {
   await connectMongo();
   try {
@@ -36,6 +36,7 @@ export const updateTodo = async (id, data) => {
   }
 };
 
+//Delete
 export const deleteTodo = async (id) => {
   await connectMongo();
   try {
