@@ -26,14 +26,21 @@ export const createTodo = async (data) => {
 
 export const updateTodo = async (id, data) => {
   await connectMongo();
-  return await Todo.findByIdAndUpdate(id, data, {
-    new: true,
-    runValidators: true,
-  });
+  try {
+    return await Todo.findByIdAndUpdate(id, data, {
+      new: true,
+      runValidators: true,
+    });
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 export const deleteTodo = async (id) => {
   await connectMongo();
-  return await Todo.deleteOne({ _id: id });
+  try {
+    return await Todo.deleteOne({ _id: id });
+  } catch (error) {
+    console.error(error);
+  }
 };
-
