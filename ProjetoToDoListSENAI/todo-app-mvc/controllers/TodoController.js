@@ -1,11 +1,10 @@
 import Todo from "@/models/Todo";
 import connectMongo from "@/utils/dbConnect";
 
-//Criar o CRUD
-
-// Read
+//criar crud
+//Read
 export const getTodos = async () => {
-  connectMongo;
+  await connectMongo;
   try {
     return await Todo.find();
   } catch (error) {
@@ -13,7 +12,7 @@ export const getTodos = async () => {
   }
 };
 
-//Create
+//create
 export const createTodo = async (data) => {
   connectMongo;
   try {
@@ -23,25 +22,16 @@ export const createTodo = async (data) => {
   }
 };
 
-//Update
+//update
 export const updateTodo = async (id, data) => {
   await connectMongo();
-  try {
-    return await Todo.findByIdAndUpdate(id, data, {
-      new: true,
-      runValidators: true,
-    });
-  } catch (error) {
-    console.error(error);
-  }
+  return await Todo.findByIdAndUpdate(id, data, {
+    new: true,
+    runValidators: true,
+  });
 };
-
-//Delete
+//delete
 export const deleteTodo = async (id) => {
   await connectMongo();
-  try {
-    return await Todo.deleteOne({ _id: id });
-  } catch (error) {
-    console.error(error);
-  }
+  return await Todo.deleteOne({ _id: id });
 };
