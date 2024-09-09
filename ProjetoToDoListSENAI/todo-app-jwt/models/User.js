@@ -23,7 +23,7 @@ UserSchema.pre("save", async function (next) {
   next();
 });
 
-// Método para comparar senhas
+// Métask para comparar senhas
 UserSchema.methods.comparePassword = function (candidatePassword) {
   return bcrypt.compare(candidatePassword, this.password);
 };

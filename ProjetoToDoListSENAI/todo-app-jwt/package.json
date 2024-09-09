@@ -1,5 +1,5 @@
 {
-  "name": "todo-app-jwt",
+  "name": "task-app-jwt",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.6.1",
     "next": "14.2.8",
